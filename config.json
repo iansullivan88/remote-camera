@@ -1,0 +1,6 @@
+{
+    "staticWebsiteDirectory": "./static",
+    "videoStreamDirectory": "/media/videostream",
+    "streamServerCommand": "./scripts/stream-server.sh",
+    "port": 5001
+}
