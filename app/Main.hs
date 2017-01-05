@@ -60,9 +60,9 @@ main = do
 
 -- |Middleware that performs an action if the url is matched
 performAction :: [Text] -> IO () -> Middleware
-performAction path action app req sendResponse = if path == pathInfo req
-    then app req (\r -> action >> sendResponse r)
-    else app req sendResponse
+performAction path action app req sendResponse = do
+    when (path == pathInfo req) action
+    app req sendResponse
 
 -- |Requires the url has a given prefix but doesn't include the prefix in the mapped file path
 -- Eg: policyIgnorePrefix a/ will match /a/b/c/d and will map it to /b/c/d

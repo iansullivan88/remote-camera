@@ -1,6 +1,6 @@
 name:                remote-camera
 version:             0.1.0.0
-synopsis:            A server for serving live video from a raspberry pi
+synopsis:            An application for serving live video from a raspberry pi
 description:         Please see README.md
 homepage:            https://github.com/githubuser/hangman-server#readme
 license:             BSD3
