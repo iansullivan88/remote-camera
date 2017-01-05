@@ -1,6 +1,8 @@
 {
     "staticWebsiteDirectory": "./static",
     "videoStreamDirectory": "/media/videostream",
-    "streamServerCommand": "./scripts/stream-server.sh",
-    "port": 5001
+    "videoProcessCommand": "./scripts/generate-hls-video.sh",
+    "port": 5001,
+    "secondsBetweenIdleChecks": 30,
+    "maxIdleSeconds": 30
 }

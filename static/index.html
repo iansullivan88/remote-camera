@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Remote Camera</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
     <body>
-        <div id="video-container"></div>
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <div id="message-container"></div>
+        <p id='video-url'></p>
+
+        <video src='/video/stream.m3u8' controls></video>
 
         <script src='/remote-video.js'></script>
     </body>
